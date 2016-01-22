@@ -19,7 +19,7 @@ templates:
 packages:
 - cf-redis-broker
 - redis-common
-- nginx_cf_redis
+- cf-redis_nginx
 - redis
 - route-registrar
 - python
