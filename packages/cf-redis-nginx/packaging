@@ -1,5 +1,6 @@
 set -e
 
+CPUS=$(grep -c ^processor /proc/cpuinfo)
 PCRE_VERSION=8.37-patch-CVE2015-3210
 NGINX_VERSION=1.8.0
 
@@ -26,5 +27,5 @@ cd nginx-$NGINX_VERSION
   --with-http_ssl_module \
   --with-pcre=../pcre-$PCRE_VERSION
 
-make
+make -j${CPUS}
 make install
