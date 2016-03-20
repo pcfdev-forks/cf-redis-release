@@ -3,7 +3,7 @@
 	url = git@github.com:pivotal-cf/cf-redis-broker.git
 [submodule "packages/ruby"]
 	path = packages/ruby
-	url = https://github.com/cloudfoundry/ruby-package
+	url = https://github.com/davidwadden/ruby-package
 [submodule "src/cf-redis-smoke-tests"]
 	path = src/cf-redis-smoke-tests
 	url = git@github.com:pivotal-cf/cf-redis-smoke-tests
